@@ -1,0 +1,4 @@
+dbt-postgres
+sqlalchemy
+pandas
+pyscopg2-binary
