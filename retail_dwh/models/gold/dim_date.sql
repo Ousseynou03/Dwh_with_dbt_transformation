@@ -20,4 +20,4 @@ SELECT
     TO_CHAR(date_day, 'Month') AS month_name,
     EXTRACT(day FROM date_day) AS day,
     EXTRACT(quarter FROM date_day) AS quarter
-FROM dates;
+FROM dates

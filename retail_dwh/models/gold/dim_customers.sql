@@ -12,4 +12,4 @@ SELECT
     gender,
     country,
     signup_date
-FROM {{ ref('silver_customers') }};
+FROM {{ ref('silver_customers') }}

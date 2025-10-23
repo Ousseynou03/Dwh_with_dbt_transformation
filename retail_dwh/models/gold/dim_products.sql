@@ -10,4 +10,4 @@ SELECT
     product_name,
     category,
     price
-FROM {{ ref('silver_products') }};
+FROM {{ ref('silver_products') }}
