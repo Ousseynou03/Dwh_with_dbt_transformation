@@ -3,15 +3,21 @@ services:
     image: dremio/dremio-oss:latest
     container_name: dremio
     ports:
-      - "9047:9047"   # UI web
-      - "31010:31010" # JDBC/ODBC client
-      - "45678:45678" # Flight server
+      - "9047:9047"
+      - "31010:31010"
+      - "45678:45678"
     environment:
       - DREMIO_JAVA_SERVER_MAX_HEAP_SIZE=2G
       - DREMIO_JAVA_CLIENT_MAX_HEAP_SIZE=1G
     volumes:
       - dremio_data:/opt/dremio/data
+    networks:
+      - data-net
     restart: unless-stopped
 
 volumes:
   dremio_data:
+
+networks:
+  data-net:
+    external: true
