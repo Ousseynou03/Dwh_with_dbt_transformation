@@ -120,7 +120,6 @@ Python	3.10+
 Pandas	Latest
 Dremio	OSS (Docker)
 Docker Compose	1.29+
-📸 Exemples visuels (à ajouter)
 
 ✅ Connexion Dremio ↔ PostgreSQL
 <img src="assets/connexiondremio.png">
